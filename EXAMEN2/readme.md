@@ -1,1 +1,1 @@
-pinga
+Basicamente he abierto el codigo de fuente de la pagina original y he comparado con el que teniamos, me he percatado de que nos faltaban diversos comandos como los que estructuran la pagina los cuales son: <header> <article> <aside> y <footer>

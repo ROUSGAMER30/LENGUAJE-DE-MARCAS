@@ -19,7 +19,7 @@ Tambien cambiamos el color de la pagina en el Css ya que de inicio estaba establ
 Le dariamos a Depurar contenido y ejecutamos en un navegador y ya podemos ver que tenemos la pagina web bien fresca.
 
 ![Real Club Deportivo Español de Barcelona](https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/03/26/Recortada/1133169114_20190302135230914-k28B-U4612245151211uF-992x558@LaVanguardia-Web.jpg)
- ![RCDE Stadium Cornella el prat](https://www.adm-fmse.com/public/assets/images/participantes/participantes-rcd-espanyol.png):height: 990px :width: 295 px :scale: 50 % 
+![RCDE Stadium Cornella el prat](https://e00-marca.uecdn.es/assets/multimedia/imagenes/2016/11/04/14782519372283.jpg) 
 
 
 Construido con 🛠️

@@ -1,6 +1,6 @@
 EXAMEN 2
 
-Basicamente he abierto el codigo de fuente de la pagina original y he comparado con el que teniamos, me he percatado de que nos faltaban diversos comandos como los que estructuran la pagina los cuales son: <header> <article> <aside> y <footer>
+Basicamente he abierto el codigo de fuente de la pagina original y he comparado con el que teniamos, me he percatado de que nos faltaban diversos comandos como los que estructuran la pagina los cuales son: header article aside y footer
 
 Pre-requisitos 📋
 para instalar los objetos que hemos usado vamos a la carpeta de examen 2 y nos descargamos el archivo :assets.zip
@@ -11,7 +11,7 @@ Una vez tuvimos la paginas pudimos añadir los comandos que nos faltaban en nues
 Descubrimos los que nos faltaban realizando una comparacion de el codigo de fuente de la pagina https://faadia.github.io/Birdwatching/
 y comparando con el codigo que teniamos en assets.zip
 
-Los comandos que faltaban eran los que estructuraban la pagina son: <header> , <article> ,<aside> y <footer> respectivamente
+Los comandos que faltaban eran los que estructuraban la pagina son: header , article ,aside y footer respectivamente
   
 Tambien cambiamos el color de la pagina en el Css ya que de inicio estaba establecio el color rojo y pusimos el color: rgba(0,255,0,0.5) que es una tonalidad de verde
 

@@ -17,7 +17,7 @@ Tambien cambiamos el color de la pagina en el Css ya que de inicio estaba establ
 
 
 Le dariamos a Depurar contenido y ejecutamos en un navegador y ya podemos ver que tenemos la pagina web bien fresca.
-![FOTO DE EL RESULTADO FINAL](Descargas/Birds resultado Jan.png)
+
 
 Construido con 🛠️
 Visual Studio Code

@@ -20,7 +20,7 @@ Le dariamos a Depurar contenido y ejecutamos en un navegador y ya podemos ver qu
 
 ![Real Club Deportivo Español de Barcelona](https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/03/26/Recortada/1133169114_20190302135230914-k28B-U4612245151211uF-992x558@LaVanguardia-Web.jpg)
 ![RCDE Stadium Cornella el prat](https://e00-marca.uecdn.es/assets/multimedia/imagenes/2016/11/04/14782519372283.jpg) 
-![Raul De Tomas](https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/06/04/15912821262628.jpg)
+![Raul De Tomas](https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/06/04/15912821262628.jpg:height: 100px :width: 200 px :scale: 50 % )
 
 Construido con 🛠️
 Visual Studio Code

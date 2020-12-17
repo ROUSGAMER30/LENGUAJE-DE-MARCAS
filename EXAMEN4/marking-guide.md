@@ -44,9 +44,9 @@ La calificación general otorgada es de 34. Calcule su calificación final y lue
   <dt> Agregue un borde negro alrededor de la columna que contiene todos los encabezados de fila de nombres de planetas (4 marcas). </dt>
   <dd> La forma más sencilla de hacer esto es:
     <ol>
-      <li>Add a <code>&lt;colgroup&gt;</code> element just below the <code>&lt;caption&gt;</code> element.</li>
-      <li>Inside this, nest two <code>&lt;col&gt;</code> elements, one with a <code>span="2"</code> attribute, and the other with a <code>style</code> attribute along the lines of <code>style="border: 2px solid black"</code>.</li>
-      <li>Notes: It would be acceptable to define all the columns in the table inside the colgroup, although you don't need to. Adding the style to each cell in the column individual would not be acceptable — this would put the styling around every cell in the column, not the column.</li>
-    </ol>
-  </dd>
+       <li> Agregue un elemento <code> & lt; colgroup & gt; </code> justo debajo del elemento <code> & lt; caption & gt; </code>. </li>
+       <li> Dentro de este, anide dos elementos <code> & lt; col & gt; </code>, uno con un atributo <code> span = "2" </code> y el otro con un <code> style </ code > atributo a lo largo de las líneas de <code> style = "border: 2px solid black" </code>. </li>
+       <li> Notas: Sería aceptable definir todas las columnas de la tabla dentro del colgroup, aunque no es necesario. Agregar el estilo a cada celda en la columna individual no sería aceptable; esto colocaría el estilo alrededor de cada celda de la columna, no de la columna. </li>
+     </ol>
+   </dd>
 </dl>

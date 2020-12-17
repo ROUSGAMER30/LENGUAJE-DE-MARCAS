@@ -1,48 +1,48 @@
-# Marking guide for "Structuring planet data"
-The following guide outlines a marking guide for the MDN Learning Area HTML Topic — [Structuring planet data](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Structuring_planet_data). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth.
+# Guía de marcado para "Estructurar datos planetarios"
+La siguiente guía describe una guía de calificación para el tema HTML del Área de aprendizaje de MDN - [Estructuración de datos planetarios] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Structuring_planet_data). Cada subtarea detallada en la evaluación se enumera a continuación, junto con una explicación de cuántas marcas vale la tarea.
 
-Note: These are guidelines, not set in stone rules — you are of course free to use your judgement on mark awarding when you meet an edge case, or something that isn't clearly cut.
+Nota: Estas son pautas, no reglas escritas en piedra; por supuesto, usted es libre de usar su criterio sobre la concesión de calificaciones cuando se encuentra con un caso límite o algo que no está claramente definido.
 
-The overall mark awarded is out of 34. Work out their final mark, and then divide by 34 and multiply by 100 to give a percentage mark. For reference, you can find a [finished marked up page](planets-data.html) that would be awarded top marks.
+La calificación general otorgada es de 34. Calcule su calificación final y luego divida por 34 y multiplique por 100 para obtener una marca de porcentaje. Como referencia, puede encontrar una [página marcada terminada] (planets-data.html) que recibiría las mejores calificaciones.
 
-## Block/structural semantics
+## Semántica de bloques / estructural
 
 <dl>
-  <dt>Giving the table a basic high level structure — an outer container, a table header, and a table body (3 marks.)</dt>
-  <dd>This is pretty simple. The student just needs to include a <code>&lt;table&gt;</code> element in the page, with a <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> as children.</dd>
-  <dt>Add the provided caption to your table. (2 marks)</dt>
-  <dd>Again, simple, but it needs it be put in the right place — the provided caption needs to be put in a <code>&lt;caption&gt;</code> element, right below the opening <code>&lt;table&gt;</code> tag.</dd>
-  <dt>Add a row to the table header containing all the column headers (5 marks).</dt>
-  <dd>The student needs to:
+  <dt> Dar a la tabla una estructura básica de alto nivel: un contenedor exterior, un encabezado de tabla y un cuerpo de tabla (3 puntos) </dt>
+  <dd> Esto es bastante simple. El alumno solo necesita incluir un elemento <code> & lt; table & gt; </code> en la página, con un <code> & lt; thead & gt; </code> y <code> & lt; tbody & gt; </code> como hijos . </dd>
+  <dt> Agregue el título proporcionado a su tabla. (2 puntos) </dt>
+  <dd> Nuevamente, simple, pero debe colocarse en el lugar correcto: el título proporcionado debe colocarse en un elemento <code> & lt; caption & gt; </code>, justo debajo de la <code> & lt; table & gt de apertura. ; </code> etiqueta. </dd>
+  <dt> Agregue una fila al encabezado de la tabla que contenga todos los encabezados de columna (5 puntos). </dt>
+  <dd> El estudiante debe:
     <ul>
-      <li>Put the cells of the row inside a <code>&lt;tr&gt;</code> element and use <code>&lt;th&gt;</code> elements for the cells because they are headers (2 marks).</li>
-      <li>Put the column header text in each cell correctly, copied from the raw data (1 mark).</li>
-      <li>Leave a two-column gap at the start of the row — this is best done with a single cell with <code>colspan="2"</code> set on it, but we would accept two cells (2 marks).</dd>
-      <li>Note: Giving the planet names column a header of "Name" is recommended, but they won't lose a mark if they forget this.</li>
+      <li> Coloque las celdas de la fila dentro de un elemento <code> & lt; tr & gt; </code> y use elementos <code> & lt; th & gt; </code> para las celdas porque son encabezados (2 marcas). < / li>
+      <li> Coloque el texto del encabezado de la columna en cada celda correctamente, copiado de los datos sin procesar (1 marca). </li>
+      <li> Deje un espacio de dos columnas al comienzo de la fila; es mejor hacerlo con una sola celda con <code> colspan = "2" </code> configurado, pero aceptaríamos dos celdas (2 puntos ). </dd>
+      <li> Nota: Se recomienda asignar a la columna de nombres de planetas un encabezado de "Nombre", pero no perderán una marca si lo olvidan. </li>
     </ul>
   </dd>
-  <dt>Create all the content rows inside the table body, remembering to make all the row headings into headings semantically (15 marks).</dt>
-  <dd>This is the most difficult part of the table — it requires getting all the group row headings in the right rows, and making them span the right number of rows and columns.
+  <dt> Cree todas las filas de contenido dentro del cuerpo de la tabla, recordando convertir todos los encabezados de fila en encabezados semánticamente (15 puntos). </dt>
+  <dd> Esta es la parte más difícil de la tabla: requiere colocar todos los encabezados de las filas del grupo en las filas correctas y hacer que abarquen el número correcto de filas y columnas.
     <ul>
-      <li>First of all, each row needs to be put inside the <code>&lt;tbody&gt;</code> (1 mark).</li>
-      <li>Each row needs to contain a <code>&lt;th&gt;</code> element containing the planet name at the start followed by nine <code>&lt;td&gt;</code> elements containing the planet's data (5 marks). Give full marks if this is mostly right with a couple of typos, but start to reduce the mark at your discretion if significant data points are wrong, wrongly placed, or omitted. Take two marks off if the planet names are not put in headers.</li>
-      <li>The first body row needs to contain an extra <code>&lt;th&gt;</code> element at the start of it, containing "Terrestial planets", with <code>rowspan="4"</code> and <code>colspan="2"</code> (2 marks).</li>
-      <li>The fifth body row needs to contain two extra <code>&lt;th&gt;</code> elements at the start, containing "Jovian planets" and "Gas giants" respectively. The former needs <code>rowspan="4"</code>, and the latter needs <code>rowspan="2"</code> (3 marks).</li>
-      <li>The seventh body row needs to contain an extra <code>&lt;th&gt;</code> element at the start, containing "Ice giants", with <code>rowspan="2"</code> (2 marks).</li>
-      <li>The ninth body row needs to contain an extra <code>&lt;th&gt;</code> element at the start, containing "Dwarf planets", with <code>colspan="2"</code> (2 marks).</li>
+      <li> En primer lugar, cada fila debe colocarse dentro del <code> & lt; tbody & gt; </code> (1 marca). </li>
+      <li> Cada fila debe contener un elemento <code> & lt; th & gt; </code> que contenga el nombre del planeta al principio seguido de nueve elementos <code> & lt; td & gt; </code> que contengan los datos del planeta (5 puntos ). Otorgue la máxima puntuación si esto es en su mayoría correcto con un par de errores tipográficos, pero comience a reducir la marca a su discreción si los puntos de datos importantes están equivocados, mal ubicados u omitidos. Quite dos puntos si los nombres de los planetas no están en los encabezados. </li>
+      <li> La primera fila del cuerpo debe contener un elemento <code> & lt; th & gt; </code> adicional al comienzo, que contenga "planetas terrestres", con <code> rowspan = "4" </code> y <code> colspan = "2" </code> (2 puntos). </li>
+      <li> La quinta fila del cuerpo debe contener dos elementos <code> & lt; th & gt; </code> adicionales al principio, que contengan "planetas jovianos" y "gigantes gaseosos" respectivamente. El primero necesita <code> rowspan = "4" </code>, y el segundo necesita <code> rowspan = "2" </code> (3 puntos). </li>
+      <li> La séptima fila del cuerpo debe contener un elemento <code> & lt; th & gt; </code> adicional al principio, que contenga "gigantes de hielo", con <code> rowspan = "2" </code> (2 puntos ). </li>
+      <li> La novena fila del cuerpo debe contener un elemento <code> & lt; th & gt; </code> adicional al principio, que contenga "planetas enanos", con <code> colspan = "2" </code> (2 puntos ). </li>
     </ul>
   </dd>
-  <dt>Add attributes to make the row and column headers unambiguously associated with the rows, columns, or rowgroups that they act as headings for (5 marks).</dt>
+  <dt> Agregue atributos para que los encabezados de fila y columna se asocien de manera inequívoca con las filas, columnas o grupos de filas para los que actúan como encabezados (5 puntos). </dt>
   <dd>
-    The student needs to add the <code>scope</code> value to all the <code>&lt;th&gt;</code> elements, giving them appropriate values as shown below:
+    El alumno debe agregar el valor <code> scope </code> a todos los elementos <code> & lt; th & gt; </code>, dándoles los valores adecuados como se muestra a continuación:
     <ul>
-      <li><code>col</code>: All the <code>&lt;th&gt;</code> elements in the table header row.</li>
-      <li><code>row</code>: All the <code>&lt;th&gt;</code> elements containing planet names, and the one containing "Dwarf planets" (it is also a heading over only one row).</li>
-      <li><code>rowgroup</code>: The <code>&lt;th&gt;</code> elements containing "Terrestial planets", "Jovian planets", "Gas giants", and "Ice giants".</li>
+      <li> <code> col </code>: todos los elementos <code> & lt; th & gt; </code> en la fila del encabezado de la tabla. </li>
+      <li> <code> fila </code>: todos los elementos <code> & lt; th & gt; </code> que contienen nombres de planetas, y el que contiene "planetas enanos" (también es un encabezado sobre una sola fila). </li>
+      <li> <code> rowgroup </code>: los elementos <code> & lt; th & gt; </code> que contienen "planetas terrestres", "planetas jovianos", "gigantes gaseosos" y "gigantes de hielo". </ li >
     </ul>
   </dd>
-  <dt>Add a black border just around the column that contains all the planet name row headers (4 marks).</dt>
-  <dd>The easiest way to do this is to:
+  <dt> Agregue un borde negro alrededor de la columna que contiene todos los encabezados de fila de nombres de planetas (4 marcas). </dt>
+  <dd> La forma más sencilla de hacer esto es:
     <ol>
       <li>Add a <code>&lt;colgroup&gt;</code> element just below the <code>&lt;caption&gt;</code> element.</li>
       <li>Inside this, nest two <code>&lt;col&gt;</code> elements, one with a <code>span="2"</code> attribute, and the other with a <code>style</code> attribute along the lines of <code>style="border: 2px solid black"</code>.</li>

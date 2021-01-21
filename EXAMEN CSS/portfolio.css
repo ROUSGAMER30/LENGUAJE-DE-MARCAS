@@ -1,0 +1,108 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    background: url(https://www.setaswall.com/wp-content/uploads/2017/03/Earth-Beauty-4K-Wallpaper-3840x2160.jpg) no-repeat;
+    background-size: cover; 
+    }
+    
+    /*estructura del cuadrito*/
+    .box{
+      width: 450px;
+      background: rgba(0,0,0,0.4); /*Red Green Blue|usado para colores semi-transparentes */
+      padding: 40px; 
+      text-align: center;
+      margin: auto;
+      margin-top: 5%;
+      color: white; /*Color para la letra*/
+      font-family: 'century Gothic',sans-serif;/*Estilo de la letra*/
+    }
+    
+    /*estructura de la imagen*/
+    .box-img{
+      border-radius:50%; /*borde redondo*/
+      width: 200px; /**/
+      height: 200px;
+    }
+    
+    /*Estructura del texto
+    *
+    */
+    .box h1{
+      font-size: 40px;
+      letter-spacing: 4px; /*efecto espaciado entre en medio de las letras */
+      font-weight: 100;
+    }
+    .box h5{
+      font-size:20px;
+      letter-spacing: 3px; /*efecto espaciado entre en medio de las letras */
+      font-weight: 100;
+    }
+    .box p{
+      text-align: justify;
+    }
+    
+    
+    /*Estructura iconos
+    *color,tamaño,estilo
+    *efecto hover.
+    */
+    ul{
+      margin:0;
+      padding:0;
+    }
+    .box li{
+      display: inline-block;
+      margin: 6px;
+      list-style: none;
+    }
+    .box li a{
+      color: white;
+      font-size:50px;
+      text-decoration:none;
+      transition: all ease-int-out 250ms;
+    }
+    /*Color de los iconos con efecto Hover*/
+    
+    .facebookcolor:hover{
+    color:#201ea8;
+    }
+    
+    .githubcolor:hover{
+      color:#a220bb;
+    }
+    
+    .twittercolor:hover{
+      color:#0ebeff;
+    }
+    
+    .instagramcolor:hover{
+      color:#ec0727;
+    }
+    
+    
+    /*RETRASO DE ANIMATE */
+    
+    .retraso-1{
+      webkit-animation-delay: 0.5s; /*especifica*/
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    
+    .retraso-2{
+      webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+    
+    .retraso-3{
+      webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+    
+    .retraso-4{
+      webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
+      animation-delay: 2s;
+    }
+    

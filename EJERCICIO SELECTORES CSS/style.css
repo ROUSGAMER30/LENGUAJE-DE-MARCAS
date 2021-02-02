@@ -1,4 +1,4 @@
-p#destacado{
-    border:solid black 1px;
-   }
-   
+.destacado > #id1 {border:solid black 1px;}
+p.destacado, span#id1 {border:solid black 1px;}
+p.destacado {border:solid black 1px;}
+p.destacado > li.elemento_enumeracion {border:solid black 1px;} 
